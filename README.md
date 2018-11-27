@@ -36,7 +36,7 @@
 ```
 * Start an emulator
 ```
-    /Users/santosh/Library/Android/sdk/tools/emulator @Nexus_5X_API_26
+    /Users/santosh/Library/Android/sdk/tools/emulator @Nexus_6_API_26
 ```
 
 ## Basics
