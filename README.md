@@ -9,9 +9,11 @@
 * ICONS 
 * ANIMATION
 * CSS Transition.
-* Splash 
 * Move from one screen to another. 
 * Share data across screen.
+* Splash 
+* IOS
+* APP ICON
 
 
 ## TODO LIST 
