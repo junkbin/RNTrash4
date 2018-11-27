@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
+import { WebView } from 'react-native';
+
 
 export default class AppWebView extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Helloooooo!</Text>
-      </View>
+      <WebView
+        originWhitelist={['*']}
+        source={{ html: '<h3>START</h3><iframe width="100%" height="300" src="http://jsfiddle.net/viveking/gxvu5r6s/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> <h3>LAST</h3>' }}
+      />
     );
   }
 }
