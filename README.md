@@ -1,3 +1,7 @@
+## WEB-VIEW
+* ``` killall node ```
+* ``` yarn start ```
+
 ## TODO
 * Native Base
 * Multiple Component
