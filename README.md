@@ -43,6 +43,33 @@
     /Users/santosh/Library/Android/sdk/tools/emulator @Nexus_6_API_26
 ```
 
+* Android Release Build
+```
+    $ cd your-app-folder
+    $ cd android && ./gradlew assembleRelease
+
+    "release": "cd android && ./gradlew assembleRelease"
+```
+
+
+* Android Debug Build
+```
+    $ cd your-app-folder
+    $ cd android && ./gradlew assembleDebug
+
+    "debug": "cd android && ./gradlew assembleDebug"
+```
+
+```
+    mkdir android/app/src/main/assets
+
+    react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+```
+
+
+mkdir -p android/app/src/main/assets && rm -rf android/app/build && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && cd android && ./gradlew clean assembleDebug && cd ../
+
+
 ## Basics
 * DEBUG
 * console.log();
