@@ -7,7 +7,7 @@ export class WebViewNew2 extends React.Component {
         return (
             <WebView
                 source={{ uri: "https://affixus.github.io/native-input/"}}
-                style={{ marginTop: 1 }}
+                style={{ marginTop: 0 }}
                 onLoadProgress={e => console.log(e.nativeEvent.progress)}
             />
         );
